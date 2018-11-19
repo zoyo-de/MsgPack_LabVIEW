@@ -1,0 +1,34 @@
+
+Encoding von Arrays
+===================
+
+Input ist Variant, dessen Typ im Vorfeld als Array bestimmt wurde (in encodeObject).
+
+- Bestimmung der Dimensionsanzahl und der Dimensionsgrößen
+
+- nur wenn ndim=1 konvertieren, sonst Fehler
+- die Dimensionsgröße wird benötigt, um den zugehörigen Arrayheader auszuwählen,
+  nicht für das Loopen
+
+- derzeit:
+	- konvertieren von Variant-of-Array-of-Int zu Array-of-Variant-of-Int
+ 	- Typ für jedes Elementent einzeln bestimmen
+
+- besser:
+    - Bestimmen des Datentyp des Arrays
+	- Wenn Elementardatentyp, dann 
+	   - Variant konvertieren zu Array-of-ArrayDatentyp
+	   - Arraygröße ermitteln
+	   - passenden Header ermitteln
+	   - Arrayelemente encoden
+	   	 -> fixer Type
+		 -> encode*.vi der Elementardatentypen sollte auch Arrays verarbeiten können
+
+		 geht das? bisher wird nur Variant reingereicht und nochmal der Typ überprüft
+		 Wenn das Array schon konvertiert ist, dann hat man für jeden Typ einen eigenen
+		 Datenpfad
+		 
+		 
+		 
+
+

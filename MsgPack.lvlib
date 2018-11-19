@@ -19,12 +19,25 @@
 		<Item Name="decodeMap.vi" Type="VI" URL="../DecodeTypes/decodeMap.vi"/>
 		<Item Name="decodeNil.vi" Type="VI" URL="../DecodeTypes/decodeNil.vi"/>
 		<Item Name="decodeString.vi" Type="VI" URL="../DecodeTypes/decodeString.vi"/>
-		<Item Name="decodeUInt.vi" Type="VI" URL="../EncodeTypes/decodeUInt.vi"/>
+		<Item Name="decodeUInt.vi" Type="VI" URL="../DecodeTypes/decodeUInt.vi"/>
 	</Item>
 	<Item Name="EncodeTypes" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">0</Property>
+		<Item Name="enc_a_FloatDbl.vi" Type="VI" URL="../EncodeTypes/enc_a_FloatDbl.vi"/>
+		<Item Name="enc_a_FloatSgl.vi" Type="VI" URL="../EncodeTypes/enc_a_FloatSgl.vi"/>
+		<Item Name="enc_a_I8.vi" Type="VI" URL="../EncodeTypes/enc_a_I8.vi"/>
+		<Item Name="enc_a_I16.vi" Type="VI" URL="../EncodeTypes/enc_a_I16.vi"/>
+		<Item Name="enc_a_I32.vi" Type="VI" URL="../EncodeTypes/enc_a_I32.vi"/>
+		<Item Name="enc_a_I64.vi" Type="VI" URL="../EncodeTypes/enc_a_I64.vi"/>
+		<Item Name="enc_a_poly.vi" Type="VI" URL="../EncodeTypes/enc_a_poly.vi"/>
+		<Item Name="enc_a_U8.vi" Type="VI" URL="../EncodeTypes/enc_a_U8.vi"/>
+		<Item Name="enc_a_U16.vi" Type="VI" URL="../EncodeTypes/enc_a_U16.vi"/>
+		<Item Name="enc_a_U32.vi" Type="VI" URL="../EncodeTypes/enc_a_U32.vi"/>
+		<Item Name="enc_a_U64.vi" Type="VI" URL="../EncodeTypes/enc_a_U64.vi"/>
 		<Item Name="encodeArray.vi" Type="VI" URL="../EncodeTypes/encodeArray.vi"/>
 		<Item Name="encodeBoolean.vi" Type="VI" URL="../EncodeTypes/encodeBoolean.vi"/>
 		<Item Name="encodeCluster.vi" Type="VI" URL="../EncodeTypes/encodeCluster.vi"/>
+		<Item Name="encodeEnum.vi" Type="VI" URL="../EncodeTypes/encodeEnum.vi"/>
 		<Item Name="encodeFloat.vi" Type="VI" URL="../EncodeTypes/encodeFloat.vi"/>
 		<Item Name="encodeInt.vi" Type="VI" URL="../EncodeTypes/encodeInt.vi"/>
 		<Item Name="encodeNIL.vi" Type="VI" URL="../EncodeTypes/encodeNIL.vi"/>
@@ -35,6 +48,11 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="mapheader.vi" Type="VI" URL="../SubVis/mapheader.vi"/>
 		<Item Name="arrayheader.vi" Type="VI" URL="../SubVis/arrayheader.vi"/>
+	</Item>
+	<Item Name="types" Type="Folder">
+		<Item Name="msgpack_config.ctl" Type="VI" URL="../SubVis/msgpack_config.ctl"/>
+		<Item Name="enum_conversion.ctl" Type="VI" URL="../SubVis/enum_conversion.ctl"/>
+		<Item Name="cluster_conversion.ctl" Type="VI" URL="../SubVis/cluster_conversion.ctl"/>
 	</Item>
 	<Item Name="decodeObject.vi" Type="VI" URL="../decodeObject.vi"/>
 	<Item Name="encodeObject.vi" Type="VI" URL="../encodeObject.vi"/>
